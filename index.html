@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jason Tse">
+    <title>Jason Tse Games</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About me</h4>
+          <p class="text-white">
+            My name is Jason Tse.<br>
+            I work as a full time software developer, and make games as a hobby in my spare time.<br>
+            Here I list some of the works that I have published onto the Google
+            play store, as well as Game Jam projects that was made with a team.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <br>
+            <li>
+              <div class="text-white">
+                <h6 class="text-white">Email</h6>
+                <a href="mailto: tkcjason@gmail.com"
+                target="_blank"
+                class="text-white">tkcjason@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <div href="#" class="navbar-brand d-flex align-items-center">
+        <strong>Jason Tse</strong>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+<!--   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jason Tse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Published Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Game Jam Games</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+</header>
+
+<main>
+
+  <section class="py-3 text-center container">
+    <div class="row py-lg-5">
+      <p>
+        <a href="#" onclick="enableBlock(1);" class="btn btn-primary my-2" id="button1">Published Games</a>
+        <a href="#" onclick="enableBlock(2);" class="btn btn-secondary my-2" id="button2">Game Jam Games</a>
+      </p>
+      <div class="col-lg-6 col-md-8 mx-auto d-block py-3" id="description1">
+        <h1 class="fw-light">Published Games</h1>
+        <p class="lead text-muted py-3">A selection of free games developed by Jason Tse 
+          for Android devices available now on the 
+          <a href="https://play.google.com/store/apps/developer?id=Jason+Tse+Games" target="_blank">Google Play store</a>. 
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-md-8 mx-auto d-none py-3" id="description2">
+        <h1 class="fw-light">Game Jam Games</h1>
+        <p class="lead text-muted py-3">Several interesting games concepts that some team members and I had played around with in the Global Game Jam over various years.<br>
+          The source code could be found on the Global Game Jam site.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album">
+
+    <div class="container d-block" id="block1">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a href="https://play.google.com/store/apps/details?id=com.jasontsegames.boxin" target="_blank">
+              <img src="assets/boxin.png" class="img-thumbnail border-0">
+            </a>
+            <div class="card-body">
+              <h5 class="card-text">Box In</h5>
+              <p class="card-text small"> Swipe to draw lines across the screen.<br>
+                Try to box in the moving balls as much as possible.<br>
+                Red balls bounce off walls.<br>
+                Yellow balls go through walls.<br>
+                Random power ups/downs are spawned every level to keep things fresh.<br>
+              </p>
+              <a style="margin-left:-15px;" href="https://play.google.com/store/apps/details?id=com.jasontsegames.boxin" target="_blank">
+                <img src="assets/boxin_google.png" class="img-thumbnail border-0" style="height: 70px;">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a href="https://play.google.com/store/apps/details?id=com.jasontsegames.spacegrids" target="_blank">
+              <img src="assets/spacegrids.png" class="img-thumbnail border-0">
+            </a>
+            <div class="card-body">
+              <h5 class="card-text">Space Grids: Puzzle</h5>
+              <p class="card-text small"> A puzzle game focused on a 7x7 grid in space.<br>
+                Try to find a route for all the spaceships to reach the destination planet by boosting across stars.<br>
+                Earn more stars by solving each puzzle with the less moves.
+              </p>
+              <a style="margin-left:-15px;" href="https://play.google.com/store/apps/details?id=com.jasontsegames.spacegrids" target="_blank">
+                <img src="assets/spacegrids_google.png" class="img-thumbnail border-0" style="height: 70px;">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a href="https://play.google.com/store/apps/details?id=com.JasonTseGames.archer" target="_blank">
+              <img src="assets/fortressfighters.png" class="img-thumbnail border-0">
+            </a>
+            <div class="card-body">
+              <h5 class="card-text">Fortress Fighters</h5>
+              <p class="card-text small"> Defend your fortress from waves of enemies and earn gold.<br>
+                Fortify your castle and build from a large selection of defenders with various skill upgrades, from the Angry Bowman and the Excellent Engineer, to the Ice Wizard and Pyromaniac, and more.<br>
+                Make your way around the world map and defeat all the bosses.
+              </p>
+              <a style="margin-left:-15px;" href="https://play.google.com/store/apps/details?id=com.JasonTseGames.archer" target="_blank">
+                <img src="assets/fortressfighters_google.png" class="img-thumbnail border-0" style="height: 70px;">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container d-none" id="block2">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="mx-auto text-center" href="https://globalgamejam.org/2017/games/bat-dolphin" target="_blank">
+              <img src="assets/batdolphin.jpg" class="img-thumbnail border-0">
+            </a>
+            <div class="card-body">
+              <h5 class="card-text">Bat Dolphin</h5>
+              <p class="card-text small">
+                Fly through the air and swim in the water with this 2D sidescroller where the terrain is invisible.<br>
+                Use your echo location ability to navigate through the level whilst eating fireflies and fish to earn more points.
+              </p>
+              <a href="https://globalgamejam.org/2017/games/bat-dolphin" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_blank">Global Game Jam site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="mx-auto text-center" href="https://globalgamejam.org/2018/games/mucus-man" target="_blank">
+              <img src="assets/mucusman.png" class="img-thumbnail border-0">
+            </a>
+            <div class="card-body">
+              <h5 class="card-text">Mucus Man</h5>
+              <p class="card-text small">
+                It's green! It's slimy. It's Mucus Man!<br>
+                A fun little 3D game where you spray green projectiles onto enemies that are out hunting for you.
+              </p>
+              <a href="https://globalgamejam.org/2018/games/mucus-man" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_blank">Global Game Jam site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="mx-auto text-center" href="https://globalgamejam.org/2019/games/home-wide-web" target="_blank">
+              <img src="assets/homewideweb.png" class="img-thumbnail border-0">
+            </a>
+            <div class="card-body">
+              <h5 class="card-text">Home Wide Web</h5>
+              <p class="card-text small">
+                Run around as a charming little spider around the cabin engaging in various tasks.
+              </p>
+              <a href="https://globalgamejam.org/2019/games/home-wide-web" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_blank">Global Game Jam site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="mx-auto text-center" href="https://globalgamejam.org/2020/games/airplane-graveyard-8" target="_blank">
+              <img src="assets/airplanegraveyard.png" class="img-thumbnail border-0">
+            </a>
+            <div class="card-body">
+              <h5 class="card-text">Airplane Graveyard</h5>
+              <p class="card-text small">
+                A 3D game where you sail around the ocean in a boat to scavenge parts through surrounding wreckages on various islands.
+              </p>
+              <a href="https://globalgamejam.org/2020/games/airplane-graveyard-8" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" target="_blank">Global Game Jam site</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1"></p>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  function enableBlock(id) {
+    var block1 = document.getElementById("block1");
+    var block2 = document.getElementById("block2");
+    var description1 = document.getElementById("description1");
+    var description2 = document.getElementById("description2");
+    var button1 = document.getElementById("button1");
+    var button2 = document.getElementById("button2");
+
+    if (id == 1) {
+      block1.classList.replace("d-none", "d-block");
+      block2.classList.replace("d-block", "d-none");
+      description1.classList.replace("d-none", "d-block");
+      description2.classList.replace("d-block", "d-none");
+      button1.classList.replace("btn-secondary", "btn-primary");
+      button2.classList.replace("btn-primary", "btn-secondary");
+    } else if (id === 2) {
+      block1.classList.replace("d-block", "d-none");
+      block2.classList.replace("d-none", "d-block");
+      description1.classList.replace("d-block", "d-none");
+      description2.classList.replace("d-none", "d-block");
+      button1.classList.replace("btn-primary", "btn-secondary");
+      button2.classList.replace("btn-secondary", "btn-primary");
+    }
+  }
+</script>
+
+  </body>
+</html>
