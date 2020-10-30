@@ -1,4 +1,4 @@
-/// adblock.js
+/// twitch-videoad.js
 const origFetch = window.fetch;
 window.fetch = (url, init, ...args) => {
 	if (typeof url === "string") {
